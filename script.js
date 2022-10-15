@@ -156,10 +156,18 @@ function passTurn(np) {
 }
 
 function choice(bl) {
-    if (turno % 2 == 0) {
+    if (turno == 8) {
+        result.innerHTML = `
+        <h1>Empate</h1>
+        <button class="btn" onclick="reset()">Reiniciar</button>
+        `
+        playerTurn(playerX, 'x', bl)
+    }
+    else if (turno % 2 == 0) {
         turno++
         playerTurn(playerX, 'x', bl)
-    } else if(turno % 2 != 0) {
+    } 
+    else if(turno % 2 != 0) {
         turno++
         playerTurn(playerO, 'o', bl)
     }
