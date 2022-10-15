@@ -1,0 +1,91 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  background: #272727;
+  color: #fff;
+  font-family: "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+body h1 {
+  margin-bottom: 3rem;
+}
+body .container {
+  width: fit-content;
+}
+body .container .line {
+  display: flex;
+  gap: 0.8rem;
+  margin-bottom: 0.8rem;
+}
+body .container #b1, body .container #b2, body .container #b3, body .container #b4, body .container #b5, body .container #b6, body .container #b7, body .container #b8, body .container #b9 {
+  display: flex;
+  position: relative;
+  background: #22324e;
+  border-radius: 5px;
+  width: 6rem;
+  height: 6rem;
+}
+body .container #b1:hover, body .container #b2:hover, body .container #b3:hover, body .container #b4:hover, body .container #b5:hover, body .container #b6:hover, body .container #b7:hover, body .container #b8:hover, body .container #b9:hover {
+  filter: brightness(1.2);
+  transition: 100ms ease-in-out;
+}
+body .container #b1:active, body .container #b2:active, body .container #b3:active, body .container #b4:active, body .container #b5:active, body .container #b6:active, body .container #b7:active, body .container #b8:active, body .container #b9:active {
+  background: #e6e6e6;
+  box-shadow: 0 0 5px #fff, 0 0 15px #fff, 0 0 25px rgba(255, 255, 255, 0.6117647059), 0 0 35px rgba(255, 255, 255, 0.5568627451);
+}
+body .container .x-mark::after {
+  position: absolute;
+  content: "X";
+  font-size: 5rem;
+  text-align: center;
+  color: #fff;
+  width: 100%;
+  height: 100%;
+  z-index: 3;
+  left: 0;
+  top: 0;
+}
+body .container .o-mark::after {
+  position: absolute;
+  content: "O";
+  font-size: 5rem;
+  text-align: center;
+  color: #fff;
+  width: 100%;
+  height: 100%;
+  z-index: 3;
+  left: 0;
+  top: 0;
+}
+body .victory {
+  transition: 300ms ease-in;
+  box-shadow: 0 0 5px #fff, 0 0 15px #fff, 0 0 25px rgba(255, 255, 255, 0.6117647059), 0 0 35px rgba(255, 255, 255, 0.5568627451);
+}
+
+.result {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.result .btn {
+  padding: 0.5rem 1rem;
+  font-size: 2rem;
+  border: none;
+  border-radius: 5px;
+  background: #22324e;
+  transition: 300ms ease-in-out;
+}
+.result .btn:hover {
+  filter: brightness(1.4);
+}
+
+/*# sourceMappingURL=style.css.map */
